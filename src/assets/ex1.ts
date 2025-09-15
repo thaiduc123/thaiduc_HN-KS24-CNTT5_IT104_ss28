@@ -1,13 +1,7 @@
-function calculate(
-  a: number,
-  b: number,
-  callback: (result: number) => void
-): void {
+function calculate(a: number, b: number, callback: (result: number) => void): void {
   const sum = a + b;
   callback(sum);
 }
-function printResult(result: number): void {
-  console.log("Kết quả là:", result);
-}
-
-calculate(8, 12, printResult);
+calculate(5, 5, (result: number) => {
+  console.log("Kết quả phép cộng là:", result);
+});
